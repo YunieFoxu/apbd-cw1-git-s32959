@@ -1,3 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using apbd_cw1_git_s32959;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main()
+    {
+        StatisticsHelper statisticsHelper = new StatisticsHelper();
+
+        for (int i = 0; i < 10; i++)
+        {
+            statisticsHelper.addStatistic(i);
+        }
+    
+        statisticsHelper.listStatistics();
+    }    
+}
