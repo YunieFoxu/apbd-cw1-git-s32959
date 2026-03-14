@@ -19,6 +19,11 @@ public class StatisticsHelper
         return _statistics.Average();
     }
 
+    public int CalculateMax()
+    {
+        return _statistics.Max();
+    }
+
     public void ListStatistics()
     {
         foreach (int x in _statistics)
