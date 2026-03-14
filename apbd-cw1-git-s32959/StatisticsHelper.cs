@@ -10,8 +10,11 @@ public class StatisticsHelper
     }
 
     public void AddStatistic(int statisctic)
-    {
-        _statistics.Add(statisctic);
+    {   
+        if (statisctic>0)
+            _statistics.Add(statisctic);
+        else
+            Console.Write("Statistic has to be greater than 0");
     }
 
     public double GetAverage()
