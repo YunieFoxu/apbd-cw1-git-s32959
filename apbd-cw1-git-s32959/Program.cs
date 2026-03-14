@@ -5,12 +5,14 @@ class Program
     static void Main()
     {
         StatisticsHelper statisticsHelper = new StatisticsHelper();
-
+        Random random = new Random();
         for (int i = 0; i < 10; i++)
         {
-            statisticsHelper.addStatistic(i);
+            statisticsHelper.AddStatistic(random.Next()%101);
         }
     
-        statisticsHelper.listStatistics();
+        statisticsHelper.ListStatistics();
+        Console.WriteLine();
+        statisticsHelper.ListStatisticsInOrder();
     }    
 }
