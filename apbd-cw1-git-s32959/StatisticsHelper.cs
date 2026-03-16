@@ -29,6 +29,11 @@ public class StatisticsHelper
         return _statistics.Max();
     }
 
+    public int CalculateMin()
+    {
+        return _statistics.Min();
+    }
+
     public void ListStatistics()
     {
         foreach (int x in _statistics)
