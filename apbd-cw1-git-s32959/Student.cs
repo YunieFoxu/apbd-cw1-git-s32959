@@ -11,4 +11,10 @@ public class Student
         this.Surname = surname;
         this.SNumber = snumber;
     }
+
+    public override string ToString()
+    {
+        return "Name: " + this.Name + " " + this.Surname + 
+               "\nSNumber: " + this.Surname;
+    }
 }
