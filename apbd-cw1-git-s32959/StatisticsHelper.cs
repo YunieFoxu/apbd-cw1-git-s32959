@@ -19,6 +19,11 @@ public class StatisticsHelper
         _statistics.Add(statistic);
     }
 
+    public double CalculateAverage()
+    {
+        return _statistics.Average();
+    }
+
     public void ListStatistics()
     {
         foreach (int x in _statistics)
