@@ -9,6 +9,11 @@ public class StatisticsHelper
         _statistics = new List<int>();
     }
 
+    public StatisticsHelper(int[] arr)
+    {
+        _statistics = new List<int>(arr);
+    }
+
     public void AddStatistic(int statistic)
     {
         _statistics.Add(statistic);
@@ -17,6 +22,16 @@ public class StatisticsHelper
     public void ListStatistics()
     {
         foreach (int x in _statistics)
+        {
+            Console.Write(x + " ");
+        }
+    }
+    
+    public void ListStatisticsInOrder()
+    {
+        List<int> tmp = new List<int>(_statistics);
+        tmp.Sort();
+        foreach (int x in tmp)
         {
             Console.Write(x + " ");
         }
