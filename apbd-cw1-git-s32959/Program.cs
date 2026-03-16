@@ -1,4 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using apbd_cw1_git_s32959;
 
-Console.WriteLine("Hello, World!");
+StatisticsHelper test = new StatisticsHelper(new []{5, 1, 2, 10, 144, 3, 5, 2, 9});
 
+test.ListStatisticsInOrder();
+if (test.CalculateMax()!=144) Console.WriteLine("Max test failed");
+if (test.CalculateMin()!=1) Console.WriteLine("Min test failed");
