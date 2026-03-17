@@ -9,3 +9,13 @@ if (test.CalculateMin()!=1)
     Console.WriteLine("Min test failed");
 if (!test.CalculateAverage().Equals(new []{5, 1, 2, 10, 144, 3, 5, 2, 9}.Average()))
     Console.WriteLine("Average test failed");
+    
+StatisticsHelper statisticsHelper = new StatisticsHelper();
+for (int i=0;i<100;i++)
+{
+    statisticsHelper.AddStatistic(i);
+}
+
+statisticsHelper.ListStatistics();
+Console.WriteLine();
+statisticsHelper.ListStatisticsInOrder();
