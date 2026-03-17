@@ -6,7 +6,7 @@ gdzie jaki commit miał miejsce merge nie był fast-forward.
 
 Pytania:
 1. Git wykona fast-forward gdy na gałęzi z której wykonujemy merge nie było żadnych nowych commitów odkąd utworzyliśmy drugi branch. 
-Merge commit powstaje natomiast gdy w wypadku na obydwu branchach doszło do zmian, ponieważ ważne jest zachowanie historii commitów obydwu branchy.
+Merge commit powstaje natomiast gdy na obydwu branchach doszło do zmian, ponieważ ważne jest zachowanie historii commitów obydwu branchy.
 2. Merge nie zmienia gałęzi(widać historię commitów na każdej z gałęzi tak jak zachodziła). 
 Mergujemy do gałęzi(czyli np. z feature na main)
 Rebase natomiast przenosi cały branch na koniec drugiego(np. feature na main).
